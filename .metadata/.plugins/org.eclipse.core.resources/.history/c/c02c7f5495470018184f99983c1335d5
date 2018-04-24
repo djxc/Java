@@ -1,0 +1,15 @@
+package MyEmail;
+
+import java.util.Properties;
+
+import javax.mail.Session;
+import javax.mail.internet.MimeMessage;
+
+public class myEmail {
+	public static void main(String[] args) {
+		Properties proper = new Properties();
+		Session session = Session.getInstance(proper);
+		MimeMessage message = new MimeMessage(session);		//创建邮件对象
+	}
+
+}

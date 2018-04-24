@@ -1,0 +1,10 @@
+package mongodb_demo;
+
+public class demo2 {
+	public static void main(String[] args) {
+		int myNum = 10;
+		
+		demo1.addNum(myNum);
+		System.out.println(myNum);
+	}
+}

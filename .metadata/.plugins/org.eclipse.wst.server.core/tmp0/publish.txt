@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Thu Mar 15 16:15:07 CST 2018
+org.eclipse.jst.j2ee.server\:/binary\:/home/dj/maven_localRepository/org/springframework/spring-web/4.0.3.RELEASE/spring-web-4.0.3.RELEASE.jar=/usr/tomcat/apache-tomcat-8.5.27/webapps/SSH/WEB-INF/lib/spring-web-4.0.3.RELEASE.jar
+org.eclipse.jst.j2ee.server\:/binary\:/home/dj/maven_localRepository/org/springframework/spring-web/4.3.1.RELEASE/spring-web-4.3.1.RELEASE.jar=/usr/tomcat/apache-tomcat-8.5.27/webapps/Spring4MVC/WEB-INF/lib/spring-web-4.3.1.RELEASE.jar
+org.eclipse.jst.j2ee.server\:SSH=/usr/tomcat/apache-tomcat-8.5.27/webapps/SSH
+org.eclipse.jst.j2ee.server\:Spring4MVC=/usr/tomcat/apache-tomcat-8.5.27/webapps/Spring4MVC

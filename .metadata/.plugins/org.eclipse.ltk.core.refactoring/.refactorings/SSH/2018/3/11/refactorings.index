@@ -1,0 +1,6 @@
+1520745743095	Move 'spring-mvc.xml' to 'META-INF'
+1521018478244	Move 'users.jsp' to 'user'
+1521019295366	Delete element
+1521092017828	Delete element
+1521092337689	Rename resource 'lei-dispatcher-servlet.xml'
+1521092834219	Rename resource 'springMVC-servlrt.xml'

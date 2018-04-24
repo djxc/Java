@@ -1,0 +1,9 @@
+springMVC与Hibernate整合：
+	1.在web.xml中设置springMVC-servlet的位置。加载spring-hibernate.xml、spring-bean.xml文件。
+	2.没有特别的设置，包的扫描，返回的文件格式和路径。
+	3.设置spring-hibernate文件：链接数据库信息、映射数据表的实体类的位置、等等（还不懂）。
+	4.设置spring-bean.xml文件，*dao、*service的包的位置，（不知道有什么作用）。
+	5.类的划分：①controller类，主要处理请求。
+			  ②service类，用来操作dao类。
+			  ③dao类，进行数据库的增删改等操作。
+			  ④entity类，根据表结构创建的类与表有相同的结构。

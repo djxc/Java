@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+		<!-- 设置数据库的链接，这里链接的是MySQL数据库 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url"><!-- 设置编码为utf8不然插入中文会乱码 -->
+        jdbc:mysql://localhost:3306/employee?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="connection.username">dj</property>
+        <property name="connection.password">123dj321</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="show_sql">true</property>
+        <mapping resource="employee.hbm.xml"/>  
+    </session-factory>
+
+</hibernate-configuration>

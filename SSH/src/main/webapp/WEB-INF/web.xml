@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <!-- 地址为http://localhost:8080/  显示的默认网页-->
+        <welcome-file-list>
+          <welcome-file>/index.jsp</welcome-file>
+        </welcome-file-list>
+   <!-- =================字符编码设置================================ -->
+  <filter>
+  	<filter-name>encodingFilter</filter-name>
+  	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+        <!-- 加载resource下的类似spring-*.xml的文件 -->
+	<context-param>
+	    <param-name>contextConfigLocation</param-name>
+	    <param-value>classpath:/spring-*.xml</param-value>
+	  </context-param>
+	  <listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	  </listener>
+	  <!-- 定义DispatcherServlet -->
+	  <servlet>
+	    <servlet-name>ssh</servlet-name>
+	    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	    <init-param>
+	      <!-- 设置调度servlet的配置文件，讲请求通过调度文件找到对应的controller进行处理。
+	      	  默认/WEB-INF/[servlet名字]-servlet.xml加载上下文， 
+	          如果配置了contextConfigLocation参数，将使用classpath:/springMVC-servlet.xml加载上下文
+	      -->
+	      <param-name>contextConfigLocation</param-name>
+	      <param-value>classpath:/springMVC-servlet.xml</param-value>
+	    </init-param>
+	    <load-on-startup>1</load-on-startup>
+	  </servlet>
+	  <!-- 拦截匹配的请求，即拦截所有的请求-->
+	  <servlet-mapping>
+	    <servlet-name>ssh</servlet-name>
+	    <url-pattern>/</url-pattern>
+	  </servlet-mapping>
+</web-app>
